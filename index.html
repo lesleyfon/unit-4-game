@@ -1,0 +1,94 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+      <!-- Added link to the jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <link rel="stylesheet" type="text/css"  href="style.css" />
+    <script src="game.js"></script> -->
+</head>
+<body>
+    <h1>CRYSTAL COLLECTION</h1>
+    <p >You lost!!!</p>
+    <p >You won!!!</p>
+    <p id = "wins">Wins :</p>
+    <p id = "lost">Losses:</p>
+
+    <div class ="crystals">
+        <ul>
+            <li id = "crsOne"><button>Crystal 1</button> </li><br>
+            <li id = "crsTwo"><button>Crystal 2</button> </li><br>
+            <li id = "crsThree"><button>Crystal 3</button> </li><br>
+            <li id = "crsFour"><button>Crystal 4</button> </li><br>
+            
+        </ul>
+
+    </div>
+
+
+    <script>
+
+
+        // creating some variables
+            var wins = 0;
+            var losses = 0;
+            var userChoice = "";
+            var randomComputer = [];
+        // function ranCompNum(){
+                    //     randomComputer = number[Math.floor(Math.random()*83)+1];
+                    
+                    // }  for (var i=18; i <=100; i++ ) {
+                
+            // };
+
+
+            $('#crsOne').on('click', function(){
+                var ran1 = "";
+                for (var i=0; i<12; i++ ){
+                   var randomOne = Math.floor(Math.random()*12) +1;
+                    ran1 = randomOne;
+                }
+                console.log(ran1);
+            });
+          
+            $('#crsTwo').on('click', function(){
+                var ran2 = "";
+                for (var i=0; i<12; i++ ){
+                   var randomTwo = Math.floor(Math.random()*12) +1;
+                    ran1 = randomTwo;
+                }
+                console.log(ran1);
+            });
+
+            $('#crsThree').on('click', function(){
+                var ran3 = "";
+                for (var i=0; i<12; i++ ){
+                   var randomThree = Math.floor(Math.random()*12) +1;
+                    ran3 = randomThree;
+                }
+                console.log(ran3);
+            });
+            
+                
+             $('#crsFour').on('click', function(){
+                var ran4 = "";
+                for (var i=0; i<12; i++ ){
+                   var randomFour = Math.floor(Math.random()*12) +1;
+                    ran4 = randomFour;
+                }
+                console.log(ran4);
+            });
+   
+                
+
+          
+
+
+        
+
+        
+    </script>
+</body> 
+
+</html>
