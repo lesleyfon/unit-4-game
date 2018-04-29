@@ -14,7 +14,12 @@
     <p >You won!!!</p>
     <p id = "wins">Wins :</p>
     <p id = "lost">Losses:</p>
+    <div>
+            <button id="ranCompNum">computer's random number</button>
 
+    </div>
+    
+    
     <div class ="crystals">
         <ul>
             <li id = "crsOne"><button>Crystal 1</button> </li><br>
@@ -25,6 +30,7 @@
         </ul>
 
     </div>
+    
 
 
     <script>
@@ -35,14 +41,18 @@
             var losses = 0;
             var userChoice = "";
             var randomComputer = [];
-        // function ranCompNum(){
-                    //     randomComputer = number[Math.floor(Math.random()*83)+1];
-                    
-                    // }  for (var i=18; i <=100; i++ ) {
-                
-            // };
-
-
+        
+                //    this onClick is to generate a random number between 18 and 100
+                $('#ranCompNum').on('click', function(){
+                var computerGen = "";
+                for (var i=18; i<100; i++ ){
+                   var comGen  = Math.floor(Math.random()*100) +18;
+                   computerGen = comGen ;
+                }
+                console.log(computerGen);
+            });
+          
+               
             $('#crsOne').on('click', function(){
                 var ran1 = "";
                 for (var i=0; i<12; i++ ){
