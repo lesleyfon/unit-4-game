@@ -15,20 +15,17 @@
     <p id = "wins">Wins :</p>
     <p id = "lost">Losses:</p>
     <div>
-            <button id="ranCompNum">computer's random number</button>
+            <h2 id="ranCompNum">computer's random number</h2>
 
     </div>
     
     
-    <div class ="crystals">
-        <ul>
-            <li id = "crsOne"><button>Crystal 1</button> </li><br>
-            <li id = "crsTwo"><button>Crystal 2</button> </li><br>
-            <li id = "crsThree"><button>Crystal 3</button> </li><br>
-            <li id = "crsFour"><button>Crystal 4</button> </li><br>
-            
-        </ul>
-
+    <div class ="crystals-container">
+        <div class="crystals" > <span id="crys1"></span>crystal 1</div>
+        <div class="crystals" > <span id="crys2">crystal 2</span></div>
+        <div class="crystals" > <span id="crys3">crystal 3</span></div>
+        <div class="crystals" > <span id="crys4">crystal 4</span> </div>
+     
     </div>
     
 
@@ -39,57 +36,46 @@
         // creating some variables
             var wins = 0;
             var losses = 0;
-            var userChoice = "";
+            var userChoice = [];
             var randomComputer = [];
+
+            var total = "";
+
+            var choice1 = Math.floor(Math.random()*12) +1;             
+            var choice2 = Math.floor(Math.random()*12) +1;             
+            var choice3 = Math.floor(Math.random()*12) +1;             
+            var choice4 = Math.floor(Math.random()*12) +1;             
+            var choiceComp = Math.floor(Math.random()*100) +18; 
+            // console.log(choiceComp)
+            // console.log(choice1)
+            // console.log(choice2)
+            // console.log(choice3)
+            // console.log(choice4)
+            
+                    
+            
+
+
         
                 //    this onClick is to generate a random number between 18 and 100
                 $('#ranCompNum').on('click', function(){
-                var computerGen = "";
-                for (var i=18; i<100; i++ ){
-                   var comGen  = Math.floor(Math.random()*100) +18;
-                   computerGen = comGen ;
-                }
-                console.log(computerGen);
-            });
-          
-               
-            $('#crsOne').on('click', function(){
-                var ran1 = "";
-                for (var i=0; i<12; i++ ){
-                   var randomOne = Math.floor(Math.random()*12) +1;
-                    ran1 = randomOne;
-                }
-                console.log(ran1);
-            });
-          
-            $('#crsTwo').on('click', function(){
-                var ran2 = "";
-                for (var i=0; i<12; i++ ){
-                   var randomTwo = Math.floor(Math.random()*12) +1;
-                    ran1 = randomTwo;
-                }
-                console.log(ran1);
-            });
+                    var randComp=""
+                    var choiceComp = Math.floor(Math.random()*100) +18; 
 
-            $('#crsThree').on('click', function(){
-                var ran3 = "";
-                for (var i=0; i<12; i++ ){
-                   var randomThree = Math.floor(Math.random()*12) +1;
-                    ran3 = randomThree;
-                }
-                console.log(ran3);
-            });
+                    randComp = randComp + choiceComp;
+                       console.log(choiceComp);
+                  
+                });
+
+                $( '.crystals').on('click', function(){
+                    var generateUserChoice = ""
+                    var choice1 = Math.floor(Math.random()*12) +1;  
+                    generateUserChoice = generateUserChoice + choice1
+                    $('.crys1').append('<p>'+ generateUserChoice + '</p>')
+                })
+                    
+             
             
-                
-             $('#crsFour').on('click', function(){
-                var ran4 = "";
-                for (var i=0; i<12; i++ ){
-                   var randomFour = Math.floor(Math.random()*12) +1;
-                    ran4 = randomFour;
-                }
-                console.log(ran4);
-            });
-   
                 
 
           
