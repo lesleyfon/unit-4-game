@@ -31,9 +31,18 @@ float: left
     height: 200px;
     float: left
 }
+/* .container{
+    width: 900px;
+    background-color: red
+} */
 .computer{
     background-color: aqua;
     width: 200px;
     height: 200px;
     float: left
+}
+.winLoss{
+    width: 100px;
+    background-color: brown;
+    height: 200px
 }
