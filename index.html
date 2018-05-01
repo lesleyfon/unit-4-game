@@ -7,6 +7,13 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- <link rel="stylesheet" type="text/css"  href="style.css" />
     <script src="game.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
+    <style>
+        
+    
+    </style>
 </head>
 <body>
     <h1>CRYSTAL COLLECTION</h1>
@@ -14,17 +21,18 @@
     <p >You won!!!</p>
     <p id = "wins">Wins :</p>
     <p id = "lost">Losses:</p>
-    <div>
-            <h2 id="ranCompNum">computer's random number</h2>
+    <div class= "computer" id="ranCompNum">
+            <h2>computer's random number:</h2>
+            
 
     </div>
     
     
     <div class ="crystals-container">
-        <div class="crystals" > <span id="crys1"></span>crystal 1</div>
-        <div class="crystals" > <span id="crys2">crystal 2</span></div>
-        <div class="crystals" > <span id="crys3">crystal 3</span></div>
-        <div class="crystals" > <span id="crys4">crystal 4</span> </div>
+        <div class="crystals" id="first"> <span id="crys1"></span>crystal 1</div>
+        <div class="crystals" id="second"> <span id="crys2">crystal 2</span></div>
+        <div class="crystals" id="third"> <span id="crys3">crystal 3</span></div>
+        <div class="crystals" id="fourth"> <span id="crys4">crystal 4</span> </div>
      
     </div>
     
@@ -39,18 +47,14 @@
             var userChoice = [];
             var randomComputer = [];
 
-            var total = "";
+            var total = [];
 
             var choice1 = Math.floor(Math.random()*12) +1;             
             var choice2 = Math.floor(Math.random()*12) +1;             
             var choice3 = Math.floor(Math.random()*12) +1;             
             var choice4 = Math.floor(Math.random()*12) +1;             
             var choiceComp = Math.floor(Math.random()*100) +18; 
-            // console.log(choiceComp)
-            // console.log(choice1)
-            // console.log(choice2)
-            // console.log(choice3)
-            // console.log(choice4)
+            
             
                     
             
@@ -59,20 +63,23 @@
         
                 //    this onClick is to generate a random number between 18 and 100
                 $('#ranCompNum').on('click', function(){
-                    var randComp=""
-                    var choiceComp = Math.floor(Math.random()*100) +18; 
 
-                    randComp = randComp + choiceComp;
-                       console.log(choiceComp);
+                         var generateComputerChoice = [];
+                    document.getElementById("ranCompNum").innerHTML=choiceComp;
+                   
                   
                 });
+                // $('#mydiv').attr("data-myval","20"); //setter
+            // alert($('#outer').html());
 
-                $( '.crystals').on('click', function(){
-                    var generateUserChoice = ""
-                    var choice1 = Math.floor(Math.random()*12) +1;  
-                    generateUserChoice = generateUserChoice + choice1
-                    $('.crys1').append('<p>'+ generateUserChoice + '</p>')
-                })
+                   
+
+                // $( '.crystals').on('click', function(){
+                //     var generateUserChoice = ""
+                //     var choice1 = Math.floor(Math.random()*12) +1;  
+                //     generateUserChoice = generateUserChoice + choice1
+                //     $('.crys1').append('<p>'+ generateUserChoice + '</p>')
+                // })
                     
              
             

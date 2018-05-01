@@ -1,4 +1,39 @@
 .crystals{
+    /* width: 200px;
+    height: 200px; */
+}
+#first{
+ margin-right: 10px;
+ margin-left: 10px;
+background-color: bisque;
+width: 200px;
+height: 200px;
+float: left
+}
+#second{
+    margin-right: 5px;
+    background-color: blanchedalmond;
     width: 200px;
     height: 200px;
+    float: left
+}
+#third{
+    margin-right: 5px;
+    background-color: aquamarine;
+    width: 200px;
+    height: 200px;
+    float: left
+}
+#fourth{
+    margin-right: 5px;
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    float: left
+}
+.computer{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    float: left
 }
