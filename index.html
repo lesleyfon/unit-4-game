@@ -11,27 +11,48 @@
             width: 200px;
         }
         .messageShow{
-            background-color: aqua;
+            background-color: whitesmoke;
             width: 200px;
             height: 100px;
+            border: 2px solid burlywood;
+            margin-top: 5px;
         }
         .numberToMatch{
-            background-color: aqua;
+            background-color: whitesmoke;
             width: 300px;
             height: 100px;
+            border: 2px solid burlywood;
+
         }
         .winsLosses{
-            background-color: antiquewhite;
+            background-color: whitesmoke;
             width: 300px;
             height: 100px;
+            border: 2px solid burlywood;
+
         }
         .usertotal{
-            background-color: antiquewhite;
+            background-color:whitesmoke;
              width: 300px;
             height: 100px; 
+            border: 2px solid burlywood;
+
         }
        body{
            background: url("assets/images/concrete_seamless.png")
+       }
+       .headTitle{
+           border: 2px solid burlywood;
+           text-align: center;
+           margin-top: 5px; 
+           background-color: aliceblue;
+       }
+       .numberToMatch{
+           text-align: center;
+           font-size: 20px;
+           padding-top: 25px ;
+           border: 2px solid burlywood;
+
        }
 
     </style>
@@ -44,17 +65,24 @@
             <h1>THE CRYSTAL CHALLENGE</h1>
     </div>
 
-    <div class="messageShow"><h3 id="message"></h3></div>
-
-<div class="winsLosses">
-    <p>Wins: <span id="wins"></span></p>
-    <p>Losses: <span id="losses"></span></p>
+    <div class="messageShow"><h3 id="message"></h3></div><br>
+<div class="row">
+    <div class="col-md-6">
+        <div class="winsLosses">
+            <p>Wins: <span id="wins"></span></p>
+            <p>Losses: <span id="losses"></span></p>
+        </div><br>
+    </div>
+    <div class="col-md-6">
+        <div class="numberToMatch">
+            <p> Target number: <span id="target"></span>
+            </p>
+        </div><br>
+    </div>
 </div>
 
-<div class="numberToMatch">
-     <p> Target number: <span id="target"></span>
-     </p>
-</div>
+
+
 
 <div class="usertotal"> <p>total: <span id="total"></span></p></div><br>
 <div class="crystal-container">
