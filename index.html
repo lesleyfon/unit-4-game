@@ -5,25 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The CRYSTAL CHALLENGE</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
     <style>
         img {
-            width: 100px;
+            width: 200px;
         }
         .messageShow{
             background-color: aqua;
-            /* width: 300px;
-            height: 300px; */
+            width: 200px;
+            height: 100px;
         }
         .numberToMatch{
-            background-color: aqua
+            background-color: aqua;
+            width: 300px;
+            height: 100px;
         }
         .winsLosses{
-            background-color: antiquewhite
+            background-color: antiquewhite;
+            width: 300px;
+            height: 100px;
         }
+        .usertotal{
+            background-color: antiquewhite;
+             width: 300px;
+            height: 100px; 
+        }
+       body{
+           background: url("assets/images/concrete_seamless.png")
+       }
 
     </style>
 </head>
 <body>
+    <div class="container">
+
+   
     <div class="headTitle">
             <h1>THE CRYSTAL CHALLENGE</h1>
     </div>
@@ -40,23 +56,39 @@
      </p>
 </div>
 
-<div class="usertotal"> <p>total: <span id="total"></span></p></div>
-<div>
-    <div id="btn1" class="button">
-        <img src="https://www.tacobell.com/medias/fan-creations-003.jpg?context=bWFzdGVyfGltYWdlc3wzNTY2M3xpbWFnZS9qcGVnfGltYWdlcy9oZDcvaDBkLzg4MjAyNzU5NzAwNzguanBnfDUwMTI2MmZmOWI4ZmM0OTNjYTk0NTY3MjdhOWEzZTI3ZjM0ZGQwMzE3YzI2NjE3ZmYyYzE4ZTQ5OWU4OGQyN2Q" />
-    </div>
-    <div id="btn2"  class="button">
-            <img src="https://www.tacobell.com/medias/fan-creations-003.jpg?context=bWFzdGVyfGltYWdlc3wzNTY2M3xpbWFnZS9qcGVnfGltYWdlcy9oZDcvaDBkLzg4MjAyNzU5NzAwNzguanBnfDUwMTI2MmZmOWI4ZmM0OTNjYTk0NTY3MjdhOWEzZTI3ZjM0ZGQwMzE3YzI2NjE3ZmYyYzE4ZTQ5OWU4OGQyN2Q" />
-        </div>
-        <div id="btn3"  class="button">
+<div class="usertotal"> <p>total: <span id="total"></span></p></div><br>
+<div class="crystal-container">
+    <div class="row">
+        <div class="col-md-3">
+            <div id="btn1" class="button">
                 <img src="https://www.tacobell.com/medias/fan-creations-003.jpg?context=bWFzdGVyfGltYWdlc3wzNTY2M3xpbWFnZS9qcGVnfGltYWdlcy9oZDcvaDBkLzg4MjAyNzU5NzAwNzguanBnfDUwMTI2MmZmOWI4ZmM0OTNjYTk0NTY3MjdhOWEzZTI3ZjM0ZGQwMzE3YzI2NjE3ZmYyYzE4ZTQ5OWU4OGQyN2Q" />
-            </div>
+            </div><br>
+        </div>
+        <div class="col-md-3">
+            <div id="btn2"  class="button">
+                <img src="https://www.tacobell.com/medias/fan-creations-003.jpg?context=bWFzdGVyfGltYWdlc3wzNTY2M3xpbWFnZS9qcGVnfGltYWdlcy9oZDcvaDBkLzg4MjAyNzU5NzAwNzguanBnfDUwMTI2MmZmOWI4ZmM0OTNjYTk0NTY3MjdhOWEzZTI3ZjM0ZGQwMzE3YzI2NjE3ZmYyYzE4ZTQ5OWU4OGQyN2Q" />
+            </div><br>
+        </div>
+        <div class="col-md-3">
+            <div id="btn3"  class="button">
+            <img src="https://www.tacobell.com/medias/fan-creations-003.jpg?context=bWFzdGVyfGltYWdlc3wzNTY2M3xpbWFnZS9qcGVnfGltYWdlcy9oZDcvaDBkLzg4MjAyNzU5NzAwNzguanBnfDUwMTI2MmZmOWI4ZmM0OTNjYTk0NTY3MjdhOWEzZTI3ZjM0ZGQwMzE3YzI2NjE3ZmYyYzE4ZTQ5OWU4OGQyN2Q" />
+            </div><br>
+        </div>
+        <div class="col-md-3">
             <div id="btn4"  class="button">
-                    <img src="https://www.tacobell.com/medias/fan-creations-003.jpg?context=bWFzdGVyfGltYWdlc3wzNTY2M3xpbWFnZS9qcGVnfGltYWdlcy9oZDcvaDBkLzg4MjAyNzU5NzAwNzguanBnfDUwMTI2MmZmOWI4ZmM0OTNjYTk0NTY3MjdhOWEzZTI3ZjM0ZGQwMzE3YzI2NjE3ZmYyYzE4ZTQ5OWU4OGQyN2Q" />
-                </div>
+              <img src="https://www.tacobell.com/medias/fan-creations-003.jpg?context=bWFzdGVyfGltYWdlc3wzNTY2M3xpbWFnZS9qcGVnfGltYWdlcy9oZDcvaDBkLzg4MjAyNzU5NzAwNzguanBnfDUwMTI2MmZmOWI4ZmM0OTNjYTk0NTY3MjdhOWEzZTI3ZjM0ZGQwMzE3YzI2NjE3ZmYyYzE4ZTQ5OWU4OGQyN2Q" />
+            </div>
+        </div>
+           
+            
+            
+          
+        
+    </div>
 </div>
 
 
+</div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/javascript/game.js"></script>
 
