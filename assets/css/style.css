@@ -1,48 +1,48 @@
-.crystals{
-    /* width: 200px;
-    height: 200px; */
-}
-#first{
- margin-right: 10px;
- margin-left: 10px;
-background-color: bisque;
-width: 200px;
-height: 200px;
-float: left
-}
-#second{
-    margin-right: 5px;
-    background-color: blanchedalmond;
+img {
     width: 200px;
-    height: 200px;
-    float: left
 }
-#third{
-    margin-right: 5px;
-    background-color: aquamarine;
+.messageShow{
+    background-color: whitesmoke;
     width: 200px;
-    height: 200px;
-    float: left
+    height: 100px;
+    border: 2px solid burlywood;
+    margin-top: 5px;
 }
-#fourth{
-    margin-right: 5px;
-    background-color: blue;
-    width: 200px;
-    height: 200px;
-    float: left
+.numberToMatch{
+    background-color: whitesmoke;
+    width: 300px;
+    height: 100px;
+    border: 2px solid burlywood;
+
 }
-/* .container{
-    width: 900px;
-    background-color: red
-} */
-.computer{
-    background-color: aqua;
-    width: 200px;
-    height: 200px;
-    float: left
+.winsLosses{
+    background-color: whitesmoke;
+    width: 300px;
+    height: 100px;
+    border: 2px solid burlywood;
+
 }
-.winLoss{
-    width: 100px;
-    background-color: brown;
-    height: 200px
+.usertotal{
+    background-color:whitesmoke;
+     width: 300px;
+    height: 100px; 
+    border: 2px solid burlywood;
+
+}
+body{
+   background: url("assets/images/concrete_seamless.png")
+}
+.headTitle{
+   border: 2px solid burlywood;
+   text-align: center;
+   margin-top: 5px; 
+   background-color: aliceblue;
+   background: url("https://png.pngtree.com/thumb_back/fh260/back_pic/02/68/42/5957908fe6d9740.jpg")
+}
+.numberToMatch{
+   text-align: center;
+   font-size: 20px;
+   padding-top: 25px ;
+   border: 2px solid burlywood;
+
 }
