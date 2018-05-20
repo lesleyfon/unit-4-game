@@ -1,50 +1,64 @@
-<!DOCTYPE <!DOCTYPE html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>Page Title</title>
-      <!-- Added link to the jQuery Library -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- <link rel="stylesheet" type="text/css"  href="style.css" />
-    <script src="game.js"></script> -->
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The CRYSTAL CHALLENGE</title>
     <style>
-        
-    
+        img {
+            width: 100px;
+        }
+        .messageShow{
+            background-color: aqua;
+            /* width: 300px;
+            height: 300px; */
+        }
+        .numberToMatch{
+            background-color: aqua
+        }
+        .winsLosses{
+            background-color: antiquewhite
+        }
+
     </style>
 </head>
 <body>
-    <div>
-        <h1>CRYSTAL COLLECTION</h1>
+    <div class="headTitle">
+            <h1>THE CRYSTAL CHALLENGE</h1>
     </div>
-    <div class="winLoss">
-           <p id = "wins">Wins :</p>
-            <p id = "lost">Losses:</p>
-    </div>
-    <p >You lost!!!</p>
-    <p >You won!!!</p>
- 
-    <div class= "container">
-         <div class= "computer" id="ranCompNum">
-            <h2>computer's random number:</h2>
-            
 
-    </div>
-    
-    </div>
-   
-    
-    <div class ="crystals-container">
-        <div class="crystals" id="first"> <span id="crys1"></span>crystal 1</div>
-        <div class="crystals" id="second"> <span id="crys2">crystal 2</span></div>
-        <div class="crystals" id="third"> <span id="crys3">crystal 3</span></div>
-        <div class="crystals" id="fourth"> <span id="crys4">crystal 4</span> </div>
-     
-    </div>
-    
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
-</body> 
+    <div class="messageShow"><h3 id="message"></h3></div>
 
+<div class="winsLosses">
+    <p>Wins: <span id="wins"></span></p>
+    <p>Losses: <span id="losses"></span></p>
+</div>
+
+<div class="numberToMatch">
+     <p> Target number: <span id="target"></span>
+     </p>
+</div>
+
+<div class="usertotal"> <p>total: <span id="total"></span></p></div>
+<div>
+    <div id="btn1" class="button">
+        <img src="https://www.tacobell.com/medias/fan-creations-003.jpg?context=bWFzdGVyfGltYWdlc3wzNTY2M3xpbWFnZS9qcGVnfGltYWdlcy9oZDcvaDBkLzg4MjAyNzU5NzAwNzguanBnfDUwMTI2MmZmOWI4ZmM0OTNjYTk0NTY3MjdhOWEzZTI3ZjM0ZGQwMzE3YzI2NjE3ZmYyYzE4ZTQ5OWU4OGQyN2Q" />
+    </div>
+    <div id="btn2"  class="button">
+            <img src="https://www.tacobell.com/medias/fan-creations-003.jpg?context=bWFzdGVyfGltYWdlc3wzNTY2M3xpbWFnZS9qcGVnfGltYWdlcy9oZDcvaDBkLzg4MjAyNzU5NzAwNzguanBnfDUwMTI2MmZmOWI4ZmM0OTNjYTk0NTY3MjdhOWEzZTI3ZjM0ZGQwMzE3YzI2NjE3ZmYyYzE4ZTQ5OWU4OGQyN2Q" />
+        </div>
+        <div id="btn3"  class="button">
+                <img src="https://www.tacobell.com/medias/fan-creations-003.jpg?context=bWFzdGVyfGltYWdlc3wzNTY2M3xpbWFnZS9qcGVnfGltYWdlcy9oZDcvaDBkLzg4MjAyNzU5NzAwNzguanBnfDUwMTI2MmZmOWI4ZmM0OTNjYTk0NTY3MjdhOWEzZTI3ZjM0ZGQwMzE3YzI2NjE3ZmYyYzE4ZTQ5OWU4OGQyN2Q" />
+            </div>
+            <div id="btn4"  class="button">
+                    <img src="https://www.tacobell.com/medias/fan-creations-003.jpg?context=bWFzdGVyfGltYWdlc3wzNTY2M3xpbWFnZS9qcGVnfGltYWdlcy9oZDcvaDBkLzg4MjAyNzU5NzAwNzguanBnfDUwMTI2MmZmOWI4ZmM0OTNjYTk0NTY3MjdhOWEzZTI3ZjM0ZGQwMzE3YzI2NjE3ZmYyYzE4ZTQ5OWU4OGQyN2Q" />
+                </div>
+</div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+
+</body>
 </html>
